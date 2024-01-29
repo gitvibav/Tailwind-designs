@@ -14,20 +14,36 @@
                 <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Home</a></li>
                 <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
                 <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Features</a></li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a></li>
+                <li onclick="dropdown()" class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a></li>
             </ul>
-            <img src="images/cart.png" class="w-8 cursor-pointer">
+            <img onclick="cartClick()" src="images/cart.png" class="w-8 cursor-pointer">
+            
         </nav>
-
-        <div class="text-white mt-32 max-w-lg">
+          
+        <div id="sec" class="min-h-0 overflow-hidden transition ease-in duration-500 opacity-0 text-white text-center text-sm w-28 p-3 rounded-lg ml-auto mr-52 bg-slate-500">
+            <p>Message us</p>
+        </div>
+        <div class="flex -mt-6 mr-11">
+            <div id="cart" class="min-h-0 overflow-hidden transition ease-in duration-500 opacity-0 text-black w-32 p-4 bg-white rounded-lg justify-end ml-auto -mr-24"> 
+                <ul>
+                    <li class="bg-slate-700 text-white p-3 text-center border-2 rounded-lg text-sm">Papaya</li>
+                    <li class="bg-slate-700 text-white p-3 text-center border-2 rounded-lg text-sm">Apple</li>
+                    <li class="bg-slate-700 text-white p-3 text-center border-2 rounded-lg text-sm">Onion</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-white -mt-5 max-w-lg">
             <h1 class="text-6xl font-semibold">Groceries<br>delivery in 15 mins</h1>
             <p class="mt-5 leading-normal">Grocify offer a wide range of products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
             <div class="mt-10">
                 <a href="#" class="text-black bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block -mt-20 mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white hover:border">Order Now</a>
                 <a href="#">Download App <span class="text-lg inline-block rotate-90">&#10148</span></a>
             </div>
+            
         </div>
         <img src="images/grocery-image.png" class="w-2/5 absolute bottom-0 right-20">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
